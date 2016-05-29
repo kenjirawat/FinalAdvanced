@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
 var request = require('request')
-var token = 'CAAWBsWbe93ABAJHtoZCIPGhG5mFmV2ocmZB5BaZBOjYbsqQIK48eMUtuBy6tBxizpw0vnEGxByG9Rc80jCke10gb5L70SYNdJbJmUZBZCl6Re33LSypKLjZCZBC8dmFDa88pAR4cXMjtkCZCJoW6NNcMxMJMJjFKeODLf30UHK3Fzmri8vZCobskPghJvah54A54ZD'
+var token = 'EAAWBsWbe93ABAPZCUFaNylnt6BPxV9OdQKy4BxGNFOFQ3obRnR1qJHRRyxjMtlclgMXEZBvrPwW2s98aJbrEKpjmR3xbKISDRKWZCxtarGrDdcFqiGMc1Oib5ZAOyeZBifVt9BFByu7ntYirHwDEGb2lw937Xwq76hAoApHbF3gZDZD'
 function sendTextMessage (sender, text) {
   messageData = {
     text: text
