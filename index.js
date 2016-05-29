@@ -26,7 +26,7 @@ function sendTextMessage (sender, text) {
 
 app.use(bodyParser.json())
 app.get('/', function (req, res) {
-  res.send('Hell word')
+  res.send('Hell Final')
 })
 app.get('/webhook', function (req, res) {
   if (req.query['hub.verify_token'] === '1234') {
@@ -44,7 +44,7 @@ app.post('/webhook/', function (req, res) {
       var text = event.message.text
       console.log(text)
       if('hi'===text){
-        sendTextMessage(sender,'สวัสดี')
+        sendTextMessage(sender,'hi')
       }
       else if ('ขอ'=== text) {
         sendTextMessage(sender,'https://www.youtube.com/results?search_query='+text)
