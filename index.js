@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
 var request = require('request')
-var token = 'CAAWBsWbe93ABAJHtoZCIPGhG5mFmV2ocmZB5BaZBOjYbsqQIK48eMUtuBy6tBxizpw0vnEGxByG9Rc80jCke10gb5L70SYNdJbJmUZBZCl6Re33LSypKLjZCZBC8dmFDa88pAR4cXMjtkCZCJoW6NNcMxMJMJjFKeODLf30UHK3Fzmri8vZCobskPghJvah54A54ZD'
+var token = 'EAAIjdgMvXHwBAIt9GA0h5T1uWgbUpkZA26AlXDCkQZARnu90dELkCLFkCFRrU2sjKoqF02PDHKxV3EBufyKfFmrDgCdUPfXXOz2KpAZBDFkf6CbglLLdTkQ2IubtEydidFG143mLjweSjPckGq3lJzKkSYFDS0mbQLRseM7ZAAZDZD'
 function sendTextMessage (sender, text) {
   messageData = {
     text: text
@@ -26,7 +26,7 @@ function sendTextMessage (sender, text) {
 
 app.use(bodyParser.json())
 app.get('/', function (req, res) {
-  res.send('Hell Final')
+  res.send('Hell Hello')
 })
 app.get('/webhook', function (req, res) {
   if (req.query['hub.verify_token'] === '1234') {
